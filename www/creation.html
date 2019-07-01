@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Parametres</title>
+		<meta charset="UTF-8">
+  		<script src="js/jquery-1.11.3.min.js"></script>
+  		<link rel="stylesheet" type="text/css" href="css/styles.css">
+  		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	</head>
+	<body class="p-3 mb-2 bg-dark text-white">
+		<div id="home">
+			<p id="param">Parametres partie</p>
+			<div class="container-fluid">
+    			<div class="row">
+    				<div class="col-sm-12">
+						<label for="nomPartie"> Nom de la partie :</label>
+					</div>
+					<div class="col-sm-12">
+						<input type="text" id="nomPartie" value="default"><br>
+					</div>
+					<div class="col-sm-6">
+						<label for="auteur">Auteur </label>
+					</div>
+					<div class="col-sm-6">
+						<input type="checkbox" class="checkbox" id="auteur"><br>
+					</div>
+					<div class="col-sm-6">
+						<label for="titre">Titre </label>
+					</div>
+					<div class="col-sm-6">
+						<input type="checkbox" class="checkbox" id="titre"><br>
+					</div>
+					<div class="col-sm-6">
+						<label for="couverture">Couverture</label>
+					</div>
+					<div class="col-sm-6">
+						<input type="checkbox" class="checkbox" id="couverture"><br>
+					</div>
+					<div class="col-sm-6">
+						<label for="cote">Cote</label>
+					</div>
+					<div class="col-sm-6">
+						<input type="checkbox" class="checkbox" id="cote"><br>
+					</div>
+					<div class="col-sm-6">
+						<label for="aleatoire">Aleatoire </label>
+					</div>
+					<div class="col-sm-6">
+						<input type="checkbox" class="checkbox" id="aleatoire" checked="checked"><br>
+					</div>
+					<div class="col-sm-6">
+						<label> Nombre de livres </label>
+					</div>
+					<div class="col-sm-6">
+						<input type="number" id="nbLivre" min="1" max="15919" value="10"><br><br>
+					</div>
+				</div>
+			</div>
+			<input type="button" id="validerParam" value=" Commencer " class="btn btn-primary" onclick="envoyerDonnees()"><br><br>
+			<a href="https://192.168.1.14/accueil.html"><input type="button" id="retourMenu" class="btn btn-danger" value=" Retour "></a>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/creation.js"></script>
+</html>

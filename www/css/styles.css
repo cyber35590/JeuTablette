@@ -1,0 +1,22 @@
+div { margin: auto; }
+p {text-align : center; font-size: 120px; }
+table { margin:auto;font-size: 50px; }
+table.apres { margin:auto;font-size: 70px; }
+td {text-align: center;}
+th{font-style: italic; }
+h4 {text-align: center;}
+h1,div { text-align: center; font-size: 50px; }
+input#btnPartie {width: 500px; height: 70px; font-size: 40px;}
+input#validerParam {width: 500px; height: 80px; font-size: 50px;}
+input#retourMenu {width: 500px; height: 80px; font-size: 50px;}
+input#changerCam {width: 400px; height: 80px; font-size: 50px;}
+/*input#scanner {width: 230px; height: 80px; font-size: 50px;}*/
+input#retour {width: 200px; height: 80px; font-size: 50px;}
+input#go {width: 230px; height: 80px; font-size: 50px;}
+input#validerIsbnASaisir {width: 200px; height: 80px; font-size: 50px;}
+input#quitterJeu {width: 200px; height: 80px; font-size: 50px;}
+canvas#pcCanvas {display: none; float: bottom;}
+canvas#mobileCanvas {display: none; float: bottom;}
+img.rounded {width: 300px;}
+input.checkbox {width: 40px; height: 40px;}
+tbody#listeParties{text-align: center;}

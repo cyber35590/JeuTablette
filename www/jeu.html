@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeu</title>
+	<meta charset="UTF-8">
+  	<script src="js/jquery-1.11.3.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+	<body class="p-3 mb-2 bg-dark text-white">
+		<div id="after">
+  			<div id="Info">
+  				<input type="button" id="changerCam" class="btn btn-primary" value=" Changer caméra " onclick="camera()">
+  				<div class="select">
+    				<label for="videoSource">Sortie video : </label><select id="videoSource"></select>
+  				</div>
+    			<table>
+      				<tbody id="info">
+      				</tbody>
+    			</table><br>
+    			<div>
+    				<input type="button" id="go" class="btn btn-primary" value=" Scanner " onclick="afficherScene()"><br><br>
+				</div>
+  			</div>
+			<div id="camera" style="display:none">
+				<input type="button" id="retour" class="btn btn-primary" value=" Retour " onclick="cacherScene()"><br><br>
+				<div><span id="dbr"></span></div>
+  					<div id="canvasDiv">
+    					<video muted autoplay id="video" class="rounded" playsinline="true"></video>
+    					<canvas id="pcCanvas" width="640" height="480"></canvas>
+    					<canvas id="mobileCanvas" width="240" height="320"></canvas>
+  					</div>
+  					<label> ISBN (si scan ne fonctionne pas) : </label>
+  					<input type="text" id="isbnASaisir">
+  					<input type="button" id="validerIsbnASaisir" class="btn btn-success" value=" Valider " onclick="traitement()"><br><br>
+				</div>
+				<div>
+					<a href="https://192.168.1.14/accueil.html"><input type="button" id="quitterJeu" class="btn btn-danger" value=" Quitter "></a>
+				</div>
+			</div>
+		</div>
+		<div id="loading" style="display:none;">
+			<h1>Chargement de la prochaine etape</h1>
+			<div class="spinner-border text-primary" role="status">
+  				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+	</body>
+	<script src="js/liste.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script async src="js/zxing.js"></script>
+	<script src="js/video.js"></script>
+	<script src="js/scan.js"></script>
+</html>

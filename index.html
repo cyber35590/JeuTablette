@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body class="p-3 mb-2 bg-dark text-white">
+	<div id="home">
+		<h1>Accueil</h1>
+		<h2>Parametres partie</h2>
+		<label>Donnees a afficher : </label><br>
+		<label for="nomPartie"> Nom de la partie</label>
+		<input type="text" id="nomPartie"><br>
+		<div class="custom-control custom-switch">
+			<input type="checkbox" class="custom-control-input" id="auteur">
+			<label for="auteur" class="custom-control-label"> Auteur</label><br>
+		</div>
+		<div class="custom-control custom-switch">
+			<input type="checkbox" class="custom-control-input" id="titre">
+			<label for="titre" class="custom-control-label"> Titre</label><br>
+		</div>
+		<div class="custom-control custom-switch">
+			<input type="checkbox" class="custom-control-input" id="couverture"checked="checked">
+			<label for="couverture" class="custom-control-label"> Couverture</label><br>
+		</div>
+		<div class="custom-control custom-switch">
+			<input type="checkbox" class="custom-control-input" id="cote">
+			<label for="cote" class="custom-control-label"> Cote</label><br>
+		</div>
+		<div class="custom-control custom-switch">
+			<input type="checkbox" class="custom-control-input" id="aleatoire">
+			<label for="aleatoire" class="custom-control-label"> Aleatoire</label><br>
+		</div>
+		<label>Types de documents : </label><br>
+		<div class="custom-control custom-switch">
+			<input type="checkbox" class="custom-control-input" id="cd">
+			<label for="cd" class="custom-control-label">CD</label><br>
+		</div>
+		<div class="custom-control custom-switch">
+			<input type="checkbox" class="custom-control-input" id="dvd">
+			<label for="dvd" class="custom-control-label"> DVD</label><br>
+		</div>
+		<div class="custom-control custom-switch">
+			<input type="checkbox" class="custom-control-input" id="revue">
+			<label for="revue" class="custom-control-label"> Revue</label><br>
+		</div>
+		<label> Nombre de livres </label>
+		<input type="number" id="nbLivre" min="0" max="3"><br>
+		<input type="button" id="validerParam" value=" Commencer " class="btn btn-primary" onclick="afficherCommencer()">
+	</div>
+<div id="after">
+	<h4></h4>
+  <div id="Info">
+    <table class="table table-sm table-dark">
+ 	 <!--<thead><tr><th scope="col">Auteur</th><th scope="col">Titre</th><th scope="col">Couverture</th><th>Cote</th><th scope="col">ISBN</th><th scope="col">Code barre</th></tr></thead>-->
+      <tbody id="info">
+      </tbody>
+    </table>
+  </div>
+<div id="camera">
+  <div>Resultat : <span id="dbr"></span></div>
+  <div class="select">
+    <label for="videoSource">Sortie video: </label><select id="videoSource"></select>
+  </div>
+  <button id="go" type="button" class="btn btn-primary btn-lg"> Commencer a scanner </button><br><br>
+  <div>
+    <video muted autoplay id="video" class="rounded" playsinline="true"></video>
+    <canvas id="pcCanvas" width="640" height="480" style="display: none; float: bottom;"></canvas>
+    <canvas id="mobileCanvas" width="240" height="320" style="display: none; float: bottom;"></canvas>
+  </div>
+  <label> ISBN (si scan ne fonctionne pas) : </label>
+  <input type="text" id="isbnASaisir">
+  <input type="button" id="validerIsbnASaisir" class="btn btn-success" value=" Valider " onclick="traitement()">
+</div>
+<input type="button" id="quitterJeu" class="btn btn-danger" value=" Quitter " onclick="quitter()">
+</div>
+</body>
+
+<script src="js/liste.js"></script>
+<script async src="js/zxing.js"></script>
+<script src="js/video.js"></script>
+<script src="js/scan.js"></script>
+</html>

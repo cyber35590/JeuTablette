@@ -1,0 +1,28 @@
+{
+	"liste":[
+	{
+		"nom":"Benoît Charlat", 
+		"titre":"Chocolat", 
+		"photo":"chocolat.jpg", 
+		"cote":"E CHA c", 
+		"isbn":"9782211200820", 
+		"codebarre":"0013128425"
+	},
+	{
+		"nom":"Thomas Müller", 
+		"titre":"Pourquoi si pressés ?", 
+		"photo":"pqsipresse.jpg", 
+		"cote":"E MUL", 
+		"isbn":"9782211216807", 
+		"codebarre":"0013136779"
+	},
+	{
+		"nom":"Anna Láng", 
+		"titre":"Mes premiers mots en anglais Farm Animals", 
+		"photo":"farmAnimals.jpg", 
+		"cote":"E LAN", 
+		"isbn":"978832910278", 
+		"codebarre":"0013140223"
+	}
+	]
+}

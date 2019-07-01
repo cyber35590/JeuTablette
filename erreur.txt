@@ -1,0 +1,34 @@
+
+TypeError: Cannot read property 'name' of null
+    at new Exemplaire (C:\Users\Utilisateur\Google Drive\Exos\nodejs\exemplaire.js:34:31)
+    at DecalogSession.search (C:\Users\Utilisateur\Google Drive\Exos\nodejs\session.js:404:14)
+    at C:\Users\Utilisateur\Google Drive\Exos\nodejs\main.js:26:20
+    at Layer.handle [as handle_request] (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\index.js:365:14)
+TypeError: Cannot read property 'name' of null
+    at new Exemplaire (C:\Users\Utilisateur\Google Drive\Exos\nodejs\exemplaire.js:34:31)
+    at DecalogSession.search (C:\Users\Utilisateur\Google Drive\Exos\nodejs\session.js:404:14)
+    at C:\Users\Utilisateur\Google Drive\Exos\nodejs\main.js:26:20
+    at Layer.handle [as handle_request] (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\index.js:365:14)
+TypeError: Cannot read property 'name' of null
+    at new Exemplaire (C:\Users\Utilisateur\Google Drive\Exos\nodejs\exemplaire.js:34:31)
+    at DecalogSession.search (C:\Users\Utilisateur\Google Drive\Exos\nodejs\session.js:404:14)
+    at C:\Users\Utilisateur\Google Drive\Exos\nodejs\main.js:26:20
+    at Layer.handle [as handle_request] (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Utilisateur\Google Drive\Exos\nodejs\node_modules\express\lib\router\index.js:365:14)
