@@ -1,4 +1,4 @@
-var ip = "192.168.1.14"
+var ip = window.location.host
 var data = {}
 var isbnSaisi = {}
 var nomPartie ={}
@@ -81,7 +81,7 @@ function dataToHtml(o)
 			tr.append(th3)
 			tr.append(td3)
 		}
-	
+
 
 	return tr
 }
@@ -108,7 +108,7 @@ function traitement()
 }
 
 function commencer()
-{	
+{
 	data = $.ajax({ url:"https://"+ ip +"/begin/"+GetPartieName(), async: false}).responseJSON
 	data.nbLivre=  data.list.length//parseInt($("#nbLivre").val())
   	tbody=$('#info')
@@ -117,7 +117,7 @@ function commencer()
 }
 
 function reprendre()
-{	
+{
 	data = $.ajax({ url:"https://"+ ip +"/reprendre", async: false}).responseJSON
 	data.nbLivre= data.list.length //parseInt($("#nbLivre").val())
   	tbody=$('#info')
@@ -169,7 +169,7 @@ function jouer()
 			{
 				validerLivreCourant()
 				console.log("Indisponible etape="+data.etape)
-				
+
 			}
 		}
 		else

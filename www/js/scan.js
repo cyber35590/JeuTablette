@@ -32,10 +32,10 @@ var decodeCallback = function (ptr, len, resultIndex, resultCount) {
 function EndGame()
 {
   alert("Bravo, vous avez gagné !")
-  window.location.href ="https://192.168.1.14/accueil.html"
+  window.location.href =HOSTURL+"/accueil.html"
 }
 function onVideoReady()
-{ 
+{
   videoReady=true
 }
 

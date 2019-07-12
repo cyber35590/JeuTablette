@@ -1,3 +1,5 @@
+var HOSTURL = window.location.origin+window.location.pathname;
+
 $.postJSON = function(url, data, args) {
   		args = $.extend({
     	url: url,
@@ -54,6 +56,6 @@ const COUVERTURE="COUVERTURE"
 		}
 
 		console.log(donnees.count)
-		x = $.postJSON("https://192.168.1.14/create",donnees)
-		window.location.href="https://192.168.1.14/jeu.html?name="+donnees.name
+		x = $.postJSON(HOSTURL+"/create",donnees)
+		window.location.href=HOSTURL+"/jeu.html?name="+donnees.name
 	}
