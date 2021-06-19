@@ -2,6 +2,9 @@ var querystring = require("querystring");
 var util= require('util');
 const request = require('sync-request');
 const DecalogError = require("./errors")
+
+var config = require("./config")
+
 //var htmlparser = require("htmlparser2");
 
 const Exemplaire = require("./exemplaire")
@@ -30,14 +33,6 @@ function toString(x)
   if(x instanceof Object)
     return JSON.stringify(x)
   return x+"";
-}
-
-var config = {
-  url: "https://sigb02.decalog.net",
-  user: "cybercommune@ville-lhermitage.fr",
-  password: "gzlcs1",
-  network: "8507572405234937897",
-  library: "3746240580644341020"
 }
 
 
@@ -209,7 +204,7 @@ class DecalogSession
     {
       if(!res.headers.location)
       {
-          return new DecalogError(DecalogError.ERROR_DATA, res, "La réponse ne donne pas de redirection")
+        return new DecalogError(DecalogError.ERROR_DATA, res, "La réponse ne donne pas de redirection")
       }
       this.authUrl=res.headers.location
       return new DecalogError(DecalogError.SUCCESS, res)
@@ -410,7 +405,7 @@ class DecalogSession
     }
     return null;
   }
- 
+
 
 }
 
